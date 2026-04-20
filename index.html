@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishesh Katara | Digital Marketing & Brand Communications Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-bg': '#0a0f1f',
+                        'brand-surface': '#12182d',
+                        'brand-border': '#222944',
+                        'brand-text-primary': '#e2e8f0',
+                        'brand-text-secondary': '#94a3b8',
+                        'brand-accent': '#38bdf8', // A vibrant, techy light blue
+                        'brand-accent-dark': '#0ea5e9',
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px 0 rgba(56, 189, 248, 0.25)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text-primary font-sans antialiased">
+    <div id="root">
+        <!-- Header -->
+        <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-bg/80 backdrop-blur-lg border-b border-brand-border/50">
+            <div class="container mx-auto px-6 py-4">
+                <nav class="flex justify-between items-center">
+                    <a href="#home" class="text-xl md:text-2xl font-display font-bold text-brand-text-primary hover:text-brand-accent transition-colors">Vishesh Katara</a>
+                    <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                        <a href="#experience" class="text-brand-text-secondary hover:text-brand-accent transition-colors">Experience</a>
+                        <a href="#education" class="text-brand-text-secondary hover:text-brand-accent transition-colors">Education</a>
+                        <a href="#skills" class="text-brand-text-secondary hover:text-brand-accent transition-colors">Skills</a>
+                        <a href="#projects" class="text-brand-text-secondary hover:text-brand-accent transition-colors">Projects</a>
+                        <a href="#contact" class="text-brand-text-secondary hover:text-brand-accent transition-colors">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-brand-text-secondary hover:text-brand-accent hover:bg-brand-surface focus:outline-none focus:ring-2 focus:ring-brand-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </nav>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+                <a href="#experience" class="block py-2 text-brand-text-secondary hover:text-brand-accent transition-colors">Experience</a>
+                <a href="#education" class="block py-2 text-brand-text-secondary hover:text-brand-accent transition-colors">Education</a>
+                <a href="#skills" class="block py-2 text-brand-text-secondary hover:text-brand-accent transition-colors">Skills</a>
+                <a href="#projects" class="block py-2 text-brand-text-secondary hover:text-brand-accent transition-colors">Projects</a>
+                <a href="#contact" class="block py-2 text-brand-text-secondary hover:text-brand-accent transition-colors">Contact</a>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-6 pt-24 md:pt-32 pb-16">
+            <!-- Hero Section -->
+            <section id="home" class="min-h-[60vh] flex flex-col justify-center items-start text-left animate-fadeIn">
+                 <div class="absolute top-0 left-0 w-full h-full bg-grid-brand-border/10 [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)] -z-10"></div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tighter text-brand-text-primary leading-tight">
+                    Vishesh Katara
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl font-light text-brand-accent">
+                    Digital Marketing & Brand Communications Professional
+                </p>
+                <p class="mt-6 max-w-3xl text-base md:text-lg text-brand-text-secondary leading-relaxed">
+                    Digital Marketing and Brand Communications professional with over 2 years of experience across B2B technology services and B2B/B2C product organizations. Currently leading end-to-end marketing as a one-person function for an IT consulting firm, managing demand generation, social media growth, automation, analytics, and sales enablement. Proven track record of building scalable marketing systems and improving campaign efficiency through the integration of AI and automation tools.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="https://opal.google/board/blobs/357bba67-ad82-4637-ace6-a1c37b43e517" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-brand-bg bg-brand-accent hover:bg-brand-accent-dark transition-colors shadow-lg shadow-brand-accent/20">
+                        Download Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 group-hover:translate-y-0.5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Work Experience -->
+            <section id="experience" class="mt-24 md:mt-32 section-fade-in">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-text-primary">Work Experience</h2>
+                <div class="mt-12 grid gap-8 md:gap-12">
+                    <div class="relative pl-8 border-l-2 border-brand-border">
+                        <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-brand-accent shadow-glow"></div>
+                        <p class="text-sm font-medium text-brand-accent">Jun 2025 – Present</p>
+                        <h3 class="mt-2 text-xl font-bold text-brand-text-primary">Brand & Growth Executive</h3>
+                        <p class="text-md text-brand-text-secondary">ManpraX Software LLP</p>
+                        <ul class="mt-4 space-y-3 list-disc list-outside text-brand-text-secondary pl-5">
+                            <li>Lead marketing strategy and brand communication for B2B software consulting services.</li>
+                            <li>Built inbound demand channels through SEO, Google Ads, LinkedIn campaigns, and event marketing.</li>
+                            <li>Designed automation workflows using n8n and Make.ai, significantly improving execution efficiency.</li>
+                            <li>Developed comprehensive marketing dashboards to provide leadership with clear decision visibility.</li>
+                            <li>Introduced AI-driven content and video production, accelerating campaign turnaround times.</li>
+                            <li>Strengthened exhibition impact through the implementation of CRM-driven lead nurturing workflows.</li>
+                        </ul>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-brand-border">
+                        <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-brand-border"></div>
+                        <p class="text-sm font-medium text-brand-text-secondary">Jun 2024 – May 2025</p>
+                        <h3 class="mt-2 text-xl font-bold text-brand-text-primary">Marketing Executive</h3>
+                        <p class="text-md text-brand-text-secondary">Automat Industries Pvt. Ltd.</p>
+                        <ul class="mt-4 space-y-3 list-disc list-outside text-brand-text-secondary pl-5">
+                            <li>Executed international exhibitions, seminars, and trade shows across India, Middle East, Africa, and Europe, managing budgets exceeding ₹3Cr.</li>
+                            <li>Led stall branding, vendor coordination, merchandising, and on-site marketing execution.</li>
+                            <li>Generated over 100 qualified business connections through strategic industry events.</li>
+                            <li>Structured post-event lead capture and follow-up workflows, improving the overall sales pipeline development.</li>
+                        </ul>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-brand-border">
+                        <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-brand-border"></div>
+                        <p class="text-sm font-medium text-brand-text-secondary">Jul 2023 – Aug 2023</p>
+                        <h3 class="mt-2 text-xl font-bold text-brand-text-primary">Digital Marketing Intern</h3>
+                        <p class="text-md text-brand-text-secondary">News 24</p>
+                        <ul class="mt-4 space-y-3 list-disc list-outside text-brand-text-secondary pl-5">
+                            <li>Improved content discoverability through SEO optimization and targeted social media distribution.</li>
+                        </ul>
+                    </div>
+                     <div class="relative pl-8 border-l-2 border-brand-border">
+                        <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-brand-border"></div>
+                        <p class="text-sm font-medium text-brand-text-secondary">Jan 2023 – Apr 2023</p>
+                        <h3 class="mt-2 text-xl font-bold text-brand-text-primary">Paid Ads Associate</h3>
+                        <p class="text-md text-brand-text-secondary">A-One Fibers</p>
+                        <ul class="mt-4 space-y-3 list-disc list-outside text-brand-text-secondary pl-5">
+                            <li>Executed and optimized acquisition campaigns across Google Ads and IndiaMART.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="mt-24 md:mt-32 section-fade-in">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-text-primary">Education</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-brand-surface p-6 rounded-lg border border-brand-border hover:border-brand-accent/50 transition-all duration-300">
+                        <h3 class="text-lg font-bold text-brand-text-primary">Advanced Certification in Digital Marketing Communication</h3>
+                        <p class="text-brand-accent mt-1">MICA</p>
+                        <p class="text-sm text-brand-text-secondary mt-2">Specializations: Generative AI, Marketing Leadership, Marketing Analytics</p>
+                    </div>
+                    <div class="bg-brand-surface p-6 rounded-lg border border-brand-border hover:border-brand-accent/50 transition-all duration-300">
+                        <h3 class="text-lg font-bold text-brand-text-primary">Bachelor of Journalism & Mass Communication</h3>
+                        <p class="text-brand-accent mt-1">Bharatiya Vidyapeeth University</p>
+                        <p class="text-sm text-brand-text-secondary mt-2">CGPA: 8.4</p>
+                    </div>
+                    <div class="bg-brand-surface p-6 rounded-lg border border-brand-border hover:border-brand-accent/50 transition-all duration-300 md:col-span-2">
+                        <h3 class="text-lg font-bold text-brand-text-primary">Certifications</h3>
+                        <ul class="mt-2 space-y-1 list-disc list-inside text-brand-text-secondary">
+                            <li>Google Analytics Certified</li>
+                            <li>HubSpot SEO & SMO</li>
+                            <li>AI-Powered Marketing Mastery</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="mt-24 md:mt-32 section-fade-in">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-text-primary">Skills</h2>
+                <div class="mt-12 space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-brand-accent">Marketing Platforms</h3>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <span class="skill-tag">Google Ads</span><span class="skill-tag">LinkedIn Ads</span><span class="skill-tag">Meta Ads</span><span class="skill-tag">IndiaMART</span>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-brand-accent">Analytics & SEO</h3>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <span class="skill-tag">Google Analytics 4</span><span class="skill-tag">Google Search Console</span><span class="skill-tag">Marketing Analytics & Dashboards</span>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-brand-accent">Automation</h3>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                           <span class="skill-tag">n8n</span><span class="skill-tag">Make.ai</span><span class="skill-tag">CRM Automation</span>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-brand-accent">Creative Tools</h3>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                           <span class="skill-tag">Canva</span><span class="skill-tag">Figma</span><span class="skill-tag">AI Content & Video Production Tools</span>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-brand-accent">Core Competencies</h3>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                           <span class="skill-tag">Brand & Social Media Growth</span><span class="skill-tag">Campaign Storytelling</span><span class="skill-tag">Demand Generation</span><span class="skill-tag">Stakeholder Enablement</span><span class="skill-tag">Event & Field Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                .skill-tag {
+                    @apply bg-brand-surface border border-brand-border text-brand-text-secondary text-sm font-medium px-4 py-1.5 rounded-full transition-all duration-300 cursor-default hover:bg-brand-accent/10 hover:border-brand-accent/50 hover:text-brand-accent;
+                }
+            </style>
+            
+            <!-- Projects -->
+            <section id="projects" class="mt-24 md:mt-32 section-fade-in">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-text-primary">Projects</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card">
+                        <h3 class="text-lg font-bold text-brand-text-primary">B2B Marketing Automation System</h3>
+                        <p class="mt-2 text-sm text-brand-text-secondary flex-grow">Designed and implemented automated workflows using n8n and Make.ai to streamline lead generation and campaign execution at ManpraX Software.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="text-lg font-bold text-brand-text-primary">Global Event Management</h3>
+                        <p class="mt-2 text-sm text-brand-text-secondary flex-grow">Managed end-to-end marketing and logistics for international trade shows with a budget of ₹3Cr+ at Automat Industries.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="text-lg font-bold text-brand-text-primary">AI Content Integration</h3>
+                        <p class="mt-2 text-sm text-brand-text-secondary flex-grow">Pioneered the use of AI tools for video and content production to reduce marketing turnaround time.</p>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                .project-card {
+                    @apply flex flex-col bg-brand-surface p-6 rounded-lg border border-brand-border transform hover:-translate-y-2 transition-all duration-300 hover:shadow-glow hover:border-brand-accent/50;
+                }
+            </style>
+
+            <!-- Contact -->
+            <section id="contact" class="mt-24 md:mt-32 text-center section-fade-in">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-text-primary">Get In Touch</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-brand-text-secondary">I'm currently open to new opportunities and collaborations. Feel free to reach out to discuss how I can contribute to your team.</p>
+                <div class="mt-10 flex justify-center items-center flex-wrap gap-6 md:gap-8">
+                    <a href="mailto:Visheshkatara2411@gmail.com" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                        <span>Visheshkatara2411@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/Visheshkatara" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <div class="contact-link cursor-default">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
+                        <span>+91 8287290206</span>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                .contact-link {
+                    @apply inline-flex items-center gap-2 text-brand-text-secondary hover:text-brand-accent transition-colors duration-300;
+                }
+            </style>
+        </main>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Animate sections on scroll
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
