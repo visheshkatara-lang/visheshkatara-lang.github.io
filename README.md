@@ -1,1 +1,0 @@
-# visheshkatara-lang.github.io
